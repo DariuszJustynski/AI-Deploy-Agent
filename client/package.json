@@ -1,0 +1,24 @@
+{
+  "name": "ai-deploy-client",
+  "version": "1.0.0",
+  "description": "AI Deploy Agent - lightweight deployment client for PHP hosting",
+  "main": "command-router.js",
+  "scripts": {
+    "deploy": "node command-router.js /deploy",
+    "upload": "node command-router.js /deploy:upload",
+    "install": "node command-router.js /deploy:install",
+    "rollback": "node command-router.js /rollback",
+    "status": "node command-router.js /status",
+    "logs": "node command-router.js /logs"
+  },
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

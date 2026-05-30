@@ -1,0 +1,19 @@
+{
+  "_comment": "AI Deploy Agent — server configuration. Edit and upload to /_deploy/.",
+  "projectName": "my-website",
+  "targetRoot": "",
+  "packageDir": "_packages",
+  "backupDir": "_backups",
+  "logsDir": "_logs",
+  "incomingDir": "_incoming",
+  "latestPackage": "",
+  "deploymentMode": "upload_install",
+  "maxBackups": 10,
+  "maxPackages": 5,
+  "preserveFiles": [
+    "ai-deploy.php",
+    "panel.php",
+    "deploy-config.json",
+    "deploy-state.json"
+  ]
+}
